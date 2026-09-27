@@ -17,3 +17,5 @@
 @media(max-width:620px){.news-hero-grid{padding:38px 0}.news-list-grid{grid-template-columns:1fr}.news-hero h1{font-size:36px}.nav{display:none}}
 .news-hero-grid>*{min-width:0}.source-panel>div{min-width:0}.news-hero p,.source-panel p,.source-panel small,.facebook-copy p,.facebook-card span,.facebook-card small,.news-page-card p{overflow-wrap:anywhere;word-break:break-word}
 @media(max-width:620px){.source-panel{padding:16px;gap:12px}.source-icon{width:46px;height:46px;font-size:30px}.news-hero{overflow:hidden}.news-hero .lead{font-size:16px}.facebook-card{overflow:hidden}}
+
+html,body{overflow-x:hidden}.news-hero-grid,.facebook-feature,.news-list-grid{max-width:100%}.source-panel,.facebook-card,.news-page-card{max-width:100%;overflow:hidden}.source-panel>div{width:0;flex:1}
