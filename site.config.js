@@ -2,7 +2,7 @@ window.HEALTH_CENTER_SITE_CONFIG = Object.freeze({
   projectName: "thc-health",
   publicApiUrl: "https://txjuiaiwffsxfcrxpkvd.supabase.co/functions/v1/thc-health-api?api=public",
   adminApiUrl: "https://txjuiaiwffsxfcrxpkvd.supabase.co/functions/v1/thc-health-api",
-  lineHubApiUrl: "https://txjuiaiwffsxfcrxpkvd.supabase.co/functions/v1/line-service-hub-web",
+  lineHubApiUrl: "https://txjuiaiwffsxfcrxpkvd.supabase.co/functions/v1/line-service-hub-web",\n  facebookPageUrl: "https://www.facebook.com/people/%E0%B9%80%E0%B8%9E%E0%B8%88%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%97%E0%B8%81%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87/61583094369573/",
   fallback: {
     unitName: "ศูนย์บริการสาธารณสุขบ้านโทกหัวช้าง",
     municipality: "เทศบาลเมืองเขลางค์นคร",
