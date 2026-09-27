@@ -1,0 +1,7 @@
+﻿dist/
+dist-production/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
