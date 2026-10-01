@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://txjuiaiwffsxfcrxpkvd.supabase.co; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'">
+<title>LINE Service Hub · Cloud Staff</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+<section class="card">
+  <div class="brand"><div><h1>LINE Service Hub</h1><p>Cloud Staff · พระบาท พลัส</p></div><span class="pill">Cloud-first</span></div>
+  <p class="muted">จัดการคำขอเชื่อมสมาชิกครอบครัวได้โดยไม่ต้องเปิดเครื่อง Local</p>
+</section>
+<section id="loginCard" class="card">
+  <h2>เข้าสู่ระบบเจ้าหน้าที่</h2>
+  <form id="loginForm">
+    <label>ชื่อผู้ใช้หรืออีเมล<input id="username" autocomplete="username" required maxlength="200"></label>
+    <label>รหัสผ่าน<input id="password" type="password" autocomplete="current-password" required maxlength="200"></label>
+    <button type="submit">เข้าสู่ระบบ</button>
+  </form>
+  <p id="loginMsg" class="msg"></p>
+</section>
+<section id="appCard" class="card hidden">
+  <div class="toolbar"><div><h2>คำขอเชื่อมครอบครัว</h2><p id="who" class="muted"></p></div><div class="actions"><button id="refreshBtn" class="secondary">รีเฟรช</button><button id="logoutBtn" class="secondary">ออกจากระบบ</button></div></div>
+  <div class="note">เด็กและผู้สูงอายุที่ตรวจตรงตามเงื่อนไขเชื่อมอัตโนมัติ ส่วนนี้ใช้สำหรับผู้ใหญ่วัย 18–59 ปีที่รอเจ้าหน้าที่อนุมัติ</div>
+  <div id="list"></div>
+  <p id="appMsg" class="msg"></p>
+</section>
+<footer>© 2026 LINE Service Hub · Design & Developed by Apiwat Meethong</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
