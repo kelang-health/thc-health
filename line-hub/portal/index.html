@@ -60,7 +60,7 @@ async function watchCloudRegistration(body,token){
    if(st.status==='rejected'){
     body.replaceChildren(steps(1),text('div','ข้อมูลยังไม่ตรงกับทะเบียน','error'),text('p','กรุณาตรวจเลขบัตรประชาชนและวันเกิดอีกครั้ง แล้วส่งใหม่','lead'));const retry=document.createElement('button');retry.className='primary';retry.textContent='แก้ไขข้อมูล';retry.onclick=()=>renderCloudRegistrationForm(body,token);body.append(retry,lineLink());return
    }
-   if(st.status==='expired'){
+   if(st.status==='cancelled'){body.replaceChildren(steps(2),text('div','ไม่พบข้อมูลในทะเบียน JHCIS','error'),text('p','กรุณาติดต่อเจ้าหน้าที่ ณ จุดบริการ เพื่อให้เจ้าหน้าที่ตรวจสอบข้อมูลและดำเนินการเชื่อมบัญชีให้','lead'),lineLink());return}\n   if(st.status==='expired'){
     body.replaceChildren(text('div','ลิงก์ลงทะเบียนหมดอายุ','error'),text('p','กรุณากด “เชื่อมบัญชี” ใน LINE ใหม่','lead'),lineLink());return
    }
   }catch{}
