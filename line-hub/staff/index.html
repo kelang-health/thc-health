@@ -12,7 +12,7 @@
 <main class="shell">
 <section class="card">
   <div class="brand"><div><h1>LINE Service Hub</h1><p>Cloud Staff · พระบาท พลัส</p></div><span class="pill">Cloud-first</span></div>
-  <p class="muted">จัดการคำขอเชื่อมสมาชิกครอบครัวได้โดยไม่ต้องเปิดเครื่อง Local</p>
+  <p class="muted">ตรวจสถานะระบบและจัดการคำขอสำคัญได้จาก Cloud โดยไม่ต้องเปิดหน้า Local Admin</p>
 </section>
 <section id="loginCard" class="card">
   <h2>เข้าสู่ระบบเจ้าหน้าที่</h2>
@@ -23,11 +23,18 @@
   </form>
   <p id="loginMsg" class="msg"></p>
 </section>
-<section id="appCard" class="card hidden">
-  <div class="toolbar"><div><h2>คำขอเชื่อมครอบครัว</h2><p id="who" class="muted"></p></div><div class="actions"><button id="refreshBtn" class="secondary">รีเฟรช</button><button id="logoutBtn" class="secondary">ออกจากระบบ</button></div></div>
-  <div class="note">เด็กและผู้สูงอายุที่ตรวจตรงตามเงื่อนไขเชื่อมอัตโนมัติ ส่วนนี้ใช้สำหรับผู้ใหญ่วัย 18–59 ปีที่รอเจ้าหน้าที่อนุมัติ</div>
-  <div id="list"></div>
-  <p id="appMsg" class="msg"></p>
+<section id="appCard" class="hidden">
+  <section class="card">
+    <div class="toolbar"><div><h2>Cloud Operations Status</h2><p id="who" class="muted"></p></div><div class="actions"><button id="refreshBtn" class="secondary">รีเฟรช</button><button id="logoutBtn" class="secondary">ออกจากระบบ</button></div></div>
+    <div id="opsGrid" class="status-grid"></div>
+    <p id="opsUpdated" class="muted small"></p>
+  </section>
+  <section class="card">
+    <h2>คำขอเชื่อมครอบครัว</h2>
+    <div class="note">เด็กและผู้สูงอายุที่ตรวจตรงตามเงื่อนไขเชื่อมอัตโนมัติ ส่วนนี้ใช้สำหรับผู้ใหญ่วัย 18–59 ปีที่รอเจ้าหน้าที่อนุมัติ</div>
+    <div id="list"></div>
+    <p id="appMsg" class="msg"></p>
+  </section>
 </section>
 <footer>© 2026 LINE Service Hub · Design & Developed by Apiwat Meethong</footer>
 </main>
